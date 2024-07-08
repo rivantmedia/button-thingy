@@ -30,7 +30,7 @@ input {
   width: 146px;
   height: 50px;
   border-radius: 50px;
-  border: 5px solid;
+  border: 3px solid;
   cursor: pointer;
   position: relative;
 }
@@ -117,35 +117,14 @@ footer {
   transform: rotate(135deg);
 }
 @media (max-width: 768px) {
-  .content-container {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
   .button {
-    background-color: #282828;
-    margin-left: 10px;
     width: 100px;
     height: 35px;
-    border-radius: 50px;
     border: 2px solid;
-    cursor: pointer;
-    position: relative;
   }
   .button::before {
-    position: absolute;
-    content: "";
-    background-color: #fff;
     width: 25px;
     height: 25px;
-    border-radius: 200px;
-    margin: 5px;
-    transition: 0.5s;
-  }
-  input:checked + .button {
-    background-color: #3ccf65;
   }
   input:checked + .button:before {
     transform: translateX(65px);
@@ -153,12 +132,8 @@ footer {
   .btn-text {
     font-size: 20px;
     width: 150px;
-    text-align: center;
-    text-justify: auto;
   }
   footer {
     font-size: 10px;
-    align-items: center;
-    justify-content: center;
   }
 }
